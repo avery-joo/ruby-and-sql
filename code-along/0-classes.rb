@@ -5,4 +5,28 @@
 
 # String Class
 
+bens_favorite_food = "tacos"
+brians_favorite_food = "mac and cheese"
+
+puts bens_favorite_food.class
+puts brians_favorite_food.class
+
+
 # String Methods
+ 
+puts bens_favorite_food.upcase
+puts brians_favorite_food.upcase
+
+# Our own class
+
+class Dog < Hash
+  def speak
+    "woof"
+  end
+end
+
+jenkins = Dog.new
+jenkins["name"] = "Jenkins"
+puts jenkins.class
+puts jenkins.speak
+puts jenkins["name"]
